@@ -7,21 +7,14 @@ body {
   min-height: 100vh;
   user-select: none;
   background: #ffffff;
+  background-image: url(assets/rm373batch13-086.jpg);
 }
 nav {
-  position: fixed;
+  position:fixed;
   top: 0;
   width: 100%;
+  color: #00ace6;
 }
-.dark-mode {
-  background-color: black;
-  color: white;
-}
-.light-mode {
-  background-color: white;
-  color: black;
-}
-
 ul {
   list-style-type: none;
   margin: 0;
@@ -66,7 +59,7 @@ li a {
   margin: 5px;
   border-radius: 4px;
   transition: 0.1s;
-  box-shadow: 5px 5px 8px #00000020, -5px -5px 8px #ffff;
+  box-shadow: 5px 5px 8px #00000020;
 }
 
 .row button:hover {
