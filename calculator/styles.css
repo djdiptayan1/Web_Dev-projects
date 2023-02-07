@@ -8,12 +8,12 @@ body {
   user-select: none;
   background: #ffffff;
   background-image: url(assets/rm373batch13-086.jpg);
+  background-size: 100% 100%;
 }
 nav {
-  position:fixed;
+  position: fixed;
   top: 0;
   width: 100%;
-  color: #00ace6;
 }
 ul {
   list-style-type: none;
@@ -26,13 +26,18 @@ ul {
 li {
   float: left;
 }
-
 li a {
   display: block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  border-radius: 20px;
+}
+li a:hover {
+  background-color: rgb(171, 171, 255);
+  color: black;
+  transform: scale(1.2);
 }
 .container {
   margin-left: 1.8em;
