@@ -1,75 +1,132 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-body{
+body {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background: linear-gradient(135deg, #4AB1FF, #2D5CFE);
+  background: linear-gradient(135deg, #77ffef, #2d5cfe);
 }
-::selection{
+::selection {
   color: #fff;
-  background: #3C87FF;
+  background: #3c87ff;
 }
-.wrapper{
+.wrapper {
   max-width: 405px;
   padding: 28px 0 30px;
   margin: 137px auto;
   background: #fff;
   border-radius: 7px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
-.task-input{
+.task-input {
   height: 52px;
   padding: 0 25px;
   position: relative;
 }
-.task-input img{
+.task-input img {
   top: 50%;
   position: absolute;
   transform: translate(17px, -50%);
 }
-.task-input input{
-    width: 100%;
-    height: 100%;
-    outline: none;
-    font-size: 18px;
-    border-radius: 10px;
-    border: 1px solid #999;
-    padding: 0 20px 0 53px;
+.task-input input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 1px solid #999;
+  padding: 0 20px 0 53px;
 }
-.task-input input::placeholder{
-    color: #bfbfbf;
+.task-input input::placeholder {
+  color: #bfbfbf;
 }
-.controls{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 18px 25px;
-    border-radius: 10px;
+.controls,
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.filters span{
-    cursor: pointer;
-    margin: 0 8px;
-    font-size: 16px;
+.controls {
+  padding: 18px 25px;
+  border-radius: 10px;
 }
-.filters span:first-child{
-    margin-left: 0px;
+.filters span {
+  cursor: pointer;
+  margin: 0 8px;
+  font-size: 16px;
 }
-.filters span :active{
-    color: #3c87ff;
+.filters span:first-child {
+  margin-left: 0px;
 }
-.controls .clear-btn{
-    outline: none;
-    border: none;
-    color: #fff;
-    border-radius: 4px;
-    padding:7px 13px ;
-    background: #3c87ff;
+.filters span :active {
+  color: #3c87ff;
 }
-.task-box{
-    margin: 20px 25px;
+.controls .clear-btn {
+  outline: none;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  padding: 7px 13px;
+  background: #3c87ff;
+}
+.task-box {
+  margin: 20px 25px;
+}
+.task-box .task {
+  list-style: none;
+  font-size: 17px;
+  margin-bottom: 18px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ccc;
+}
+.task-box .task:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.task label {
+  display: flex;
+  justify-content: center;
+}
+.task label input {
+  margin-top: 6px;
+  margin-right: 12px;
+}
+.task .settings {
+  cursor: pointer;
+  position: relative;
+}
+.settings .task-menu {
+  position: absolute;
+  padding: 5px 0;
+  right: -5px;
+  bottom: -65px;
+  z-index: 2;
+  transform: scale(0);
+  border-radius: 5px;
+  background: #fff;
+  transform-origin: top right;
+  transition: transform 0.2s ease;
+  padding: 5px;
+  box-shadow: 0 0 6px rgb(0, 0, 0, 0.15);
+}
+.settings:hover .task-menu {
+  transform: scale(1);
+}
+.task-menu li {
+  height: 25px;
+  font-size: 16px;
+  padding: 17px 15px;
+  margin-bottom: 2px;
+  justify-content: flex-start;
+}
+.task-menu :hover {
+  background: #cffff9;
+}
+.task-menu li i {
+  padding-right: 8px;
 }

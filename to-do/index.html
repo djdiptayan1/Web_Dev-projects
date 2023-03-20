@@ -1,38 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TO-DO application</title>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">  
+    <title>Todo List App in JavaScript | CodingNepal</title>
     <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
     <div class="wrapper">
-        <div class="task-input">
-            <img src="https://img.icons8.com/external-tal-revivo-tritone-tal-revivo/32/null/external-top-square-blocks-followed-by-vertical-columns-grid-tritone-tal-revivo.png" alt="logo">
-            <input type="text" placeholder="Add a new task">
+      <div class="task-input">
+        <img src="https://img.icons8.com/external-tal-revivo-tritone-tal-revivo/32/null/external-top-square-blocks-followed-by-vertical-columns-grid-tritone-tal-revivo.png" alt="icon">
+        <input type="text" placeholder="Add a new task">
+      </div>
+      <div class="controls">
+        <div class="filters">
+          <span class="active" id="all">All</span>
+          <span id="pending">Pending</span>
+          <span id="completed">Completed</span>
         </div>
-        <div class="controls">
-            <div class="filters">
-                <span id="all" class="active">All</span>
-                <span id="all">Pending</span>
-                <span id="all">Completed</span>
-            </div>
-            <button class="clear-btn">Clear All</button>
-        </div>
-        <ul class="task-box">
-            <li>
-                <label for="1">
-                    <input type="checkbox" id="1">
-                    <p>Hello World</p>
-                </label>
-                <div class="settings">
-                    <i class="uil uil-ellipse-h"></i>
-                </div>
-            </li>
-
-        </ul>
+        <button class="clear-btn">Clear All</button>
+      </div>
+      <ul class="task-box"></ul>
     </div>
-</body>
+
+    <script src="script.js"></script>
+
+  </body>
 </html>
