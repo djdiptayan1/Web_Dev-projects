@@ -92,6 +92,10 @@ li {
   display: flex;
   justify-content: center;
 }
+.task label p.checked{
+  color: green;
+  text-decoration: line-through;
+}
 .task label input {
   margin-top: 6px;
   margin-right: 12px;
